@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form 1</title>
+    <link rel="stylesheet" href="./css/all.css">
+    <style>
+        body {
+            font-family: verdana;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        /* Style the input container */
+        .container_input {
+            display: flex;
+            width: 100%;
+            margin-bottom: 16px;
+        }
+
+        /* Style the icons */
+        .icon {
+            width: 50px;
+            padding: 12px;
+            background-color: #ffcc00;
+            color: black;
+            text-align: center;
+        }
+
+        /* Style the input field */
+        .input_field {
+            width: 100%;
+            padding: 10px;
+            margin-left: 1px;
+        }
+
+        .input_field:focus {
+            border: 2px solid #ffcc00;
+            outline: none;
+
+        }
+
+        /* Style the Submit button */
+        .btn {
+            width: 100%;
+            padding: 15px 20px;
+            border: none;
+            background-color: #ffcc00;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Registration Form</h2>
+    <form action="">
+        <div class="container_input">
+            <label for="username"><i class="fa fa-user icon"></i></label>
+            <input class="input_field" type="search" name="" id="username" placeholder="UserName..." required>
+        </div>
+        <div class="container_input">
+            <label for="email"><i class="fa fa-envelope icon"></i></label>
+            <input class="input_field" type="email" name="" id="email" placeholder="Email..." required>
+        </div>
+        <div class="container_input">
+            <label for="password"><i class="fa fa-key icon"></i></label>
+            <input class="input_field" type="password" name="" id="password" placeholder="Password..." required>
+        </div>
+        <div class="container_input">
+            <label for="re_password"><i class="fa fa-key icon"></i></label>
+            <input class="input_field" type="password" name="" id="re_password" placeholder="Re-Password..." required>
+        </div>
+        <button class="btn">Register</button>
+    </form>
+</body>
+
+</html>

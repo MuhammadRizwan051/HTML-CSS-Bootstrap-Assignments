@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3 ways to center a div</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        /* 1st method  Using CSS position and transform*/
+        /* .parent_div{
+            background-color: #2980b9;
+            height: 100vh;
+            width: 100vw;
+            position: relative;
+        }
+        .child_div{
+            background-color: #1abc9c;
+            height: 60vh;
+            width: 60vw;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        } */
+
+
+
+        /* 2nd method   Using CSS Flex*/
+        /* .parent_div {
+            background-color: #2980b9;
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .child_div {
+            background-color: #1abc9c;
+            height: 60vh;
+            width: 60vw;
+        } */
+
+
+
+         /* 3rd method  Using CSS Grid */
+         .parent_div{
+            background-color: #2980b9;
+            height: 100vh;
+            width: 100vw;
+            display: grid;
+            place-items: center;
+        }
+        .child_div{
+            background-color: #1abc9c;
+            height: 60vh;
+            width: 60vw;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 3 ways to center a div -->
+    <div class="parent_div">
+        <div class="child_div">
+            <h1>Hello World</h1>
+        </div>
+    </div>
+</body>
+
+</html>
