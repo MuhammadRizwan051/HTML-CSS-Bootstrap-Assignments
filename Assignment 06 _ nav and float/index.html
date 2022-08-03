@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nav bar and float</title>
+    <style>
+        body {
+            margin: 0px;
+        }
+
+        .navbar {
+            background-color: rgb(5, 5, 12);
+            width: 100%;
+        }
+
+        .navbar ul {
+            overflow: auto;
+        }
+
+        .navbar li {
+            margin: 20px;
+            /* margin: 13px 20px; */
+            float: left;
+            list-style: none;
+        }
+
+        .navbar li a {
+            text-decoration: none;
+            color: white;
+            padding: 15px;
+            /* padding: 3px 3px; */
+            font-size: 25px;
+            font-family: sans-serif;
+        }
+
+        .main_img img {
+            width: 100%;
+            height: 400px;
+            /* margin: 0px; */
+        }
+
+        .six_images {
+            padding: 10px;
+        }
+
+        .six_images img {
+            width: 32%;
+            height: 350px;
+            /* width: 0px; */
+            margin: 10px;
+        }
+
+        .left {
+            width: 50%;
+            float: left;
+        }
+
+        .right img {
+            height: 620px;
+            width: 50%;
+        }
+
+        .float_container {
+            padding: 24px;
+            height: 500px;
+        }
+
+        .float_container .left p {
+            margin: 0px;
+            margin-right: 20px;
+            font-size: 20px;
+            font-family: sans-serif;
+            text-align: justify;
+        }
+
+        .footer marquee {
+            background-color: black;
+            color: white;
+            margin-top: 30px;
+            padding: 16px;
+            font-size: 20px;
+            font-family: sans-serif;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">Service</a></li>
+                <li><a href="">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main_img">
+        <img src="./Images/Main Image.jpg" alt="">
+        <!-- <img src="./Images/Civic Car.jpg" alt=""> -->
+    </div>
+    <div class="six_images">
+        <img src="./Images/Img 1.jpg" alt="">
+        <img src="./Images/Img 2.jpg" alt="">
+        <img src="./Images/Img 3.jpg" alt="">
+        <img src="./Images/Img 3.jpg" alt="">
+        <img src="./Images/Img 1.jpg" alt="">
+        <img src="./Images/Img 2.jpg" alt="">
+    </div>
+
+    <div class="float_container">
+        <div class="left">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit non, rerum magnam qui iure dicta
+                dolorem iste eligendi consequatur delectus! Doloribus repellendus odio ullam maxime doloremque quas
+                mollitia beatae eveniet.
+                Alias asperiores debitis magnam fugit enim excepturi, explicabo, corporis porro necessitatibus
+                laboriosam, hic quae facere. Nostrum ducimus, pariatur laborum totam praesentium voluptates quibusdam,
+                atque, nisi consectetur minima magni modi deserunt.
+                Animi dicta doloribus ex, ea ut delectus est aliquam quas, excepturi harum sapiente, inventore quam.
+                Non, sunt! Illum, assumenda minima, animi voluptate quidem exercitationem accusamus dignissimos quam
+                dolore recusandae placeat?
+                Fugiat nesciunt, vel, laborum rem nostrum quisquam quas praesentium quod, sed possimus ipsam itaque
+                cupiditate amet ullam? Beatae aspernatur id, a quis mollitia ipsa! Odit eius commodi aliquam ducimus
+                quia?
+                Eos necessitatibus, unde laborum in corporis accusantium molestiae ratione cum praesentium ea amet,
+                aperiam voluptates vero tempora, deleniti blanditiis? Ab consequatur ex dolor aspernatur tempora fugiat
+                maxime culpa placeat illo.Alias asperiores debitis magnam fugit enim excepturi, explicabo, corporis
+                porro necessitatibus
+                laboriosam, hic quae facere. Nostrum ducimus, pariatur laborum totam praesentium voluptates quibusdam,
+                atque, nisi consectetur minima magni modi deserunt.
+                Animi dicta doloribus ex, ea ut delectus est aliquam quas, excepturi harum sapiente, inventore quam.
+                Non, sunt! Illum, assumenda minima, animi voluptate quidem exercitationem accusamus dignissimos quam
+                dolore recusandae placeat?
+                Fugiat nesciunt, vel, laborum rem nostrum quisquam quas praesentium quod, sed possimus ipsam itaque
+                cupiditate amet ullam? Beatae aspernatur id, a quis mollitia ipsa! Odit eius commodi aliquam ducimus
+                quia?
+                Eos necessitatibus, unde laborum in corporis accusantium molestiae ratione cum praesentium ea amet,
+                aperiam voluptates vero tempora, deleniti blanditiis? Ab consequatur ex dolor aspernatur tempora fugiat
+                maxime culpa placeat illo.Alias asperiores debitis magnam fugit enim excepturi, explicabo, corporis
+                porro necessitatibus
+                laboriosam, hic quae facere. Nostrum ducimus, pariatur laborum totam praesentium voluptates quibusdam,
+                atque, nisi consectetur minima magni modi deserunt.
+                Animi dicta doloribus ex, ea ut delectus est aliquam quas, excepturi harum sapiente, inventore quam.
+                Non, sunt! Illum, assumenda minima, animi voluptate quidem exercitationem accusamus dignissimos quam
+                dolore recusandae placeat?
+
+            </p>
+        </div>
+        <div class="right">
+            <img src="./Images/Civic Car.jpg" alt="">
+        </div>
+    </div>
+    <div class="footer">
+        <marquee behavior="" direction="">My name is Muhammad Rizwan</marquee>
+    </div>
+
+</body>
+
+</html>
