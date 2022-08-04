@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form 4</title>
+    <link rel="stylesheet" href="./css/all.css">
+    <style>
+        body {
+            background-image: url("./Images/Wallpaper3.jpg");
+            background-repeat: no-repeat;
+            background-size: 100vw 100vh;
+        }
+
+        form {
+            width: 30%;
+            margin: 180px auto;
+            text-align: center;
+            padding: 50px 25px;
+            box-sizing: border-box;
+            box-shadow: 2px 2px 20px rgba(137, 137, 137, 0.5);
+            background: transparent;
+            border: 1px solid white;
+            /* border: 5px dashed; */
+            /* border-image-source: linear-gradient(to right, red, purple); */
+            /* border-image-slice: 1; */
+            border-top-left-radius: 80px;
+            border-bottom-right-radius: 80px;
+            backdrop-filter: blur(200px);
+        }
+
+        /* Style the input row */
+        .row {
+            display: flex;
+            width: 100%;
+            margin-bottom: 16px;
+            height: 50px;
+        }
+
+        /* Style the labels */
+        .labels {
+            width: 25%;
+            font-size: 20px;
+            color: white;
+            text-align: left;
+            padding: 10px;
+            font-family: arial;
+        }
+
+        .row .labels:hover {
+            color: red;
+        }
+
+
+        /* Style the icons */
+        .icon {
+            width: 10%;
+        }
+
+        .fa {
+            height: 20px;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: red;
+            color: white;
+        }
+
+        .fa:hover {
+            background-color: dodgerblue;
+        }
+
+
+        /* Style the input field */
+        .input_field {
+            width: 65%;
+            padding: 5px;
+            margin-left: 1px;
+            background: transparent;
+            border: none;
+            outline: none;
+            border-bottom: 3px solid white;
+            color: white;
+            font-size: 18px;
+            padding-left: 15px;
+            margin-left: 15px;
+        }
+
+        .input_field::placeholder {
+            color: white;
+            font-size: 18px;
+        }
+
+        .input_field:hover {
+            border-bottom: 3px solid dodgerblue;
+        }
+
+        .input_field:focus {
+            border-bottom: 3px solid red;
+        }
+
+
+
+        /* Style the checkbox row */
+
+        .row_checkbox {
+            width: 100%;
+            font-size: 20px;
+            font-family: arial;
+            margin-top: 60px;
+            margin-bottom: 10px;
+            color: white;
+        }
+
+        .row_checkbox input {
+            width: 20px;
+            height: 20px;
+        }
+
+        .row_checkbox label {
+            margin-left: 10px;
+        }
+
+        /* Style the Submit button */
+        .btn {
+            text-align: right;
+        }
+
+        button {
+            margin-top: 35px;
+            width: 30%;
+            padding: 15px 20px;
+            border: none;
+            border-radius: 10%;
+            background-color: red;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            font-size: 20px;
+        }
+        button:hover{
+            background-color: yellow;
+            color: black;
+        }
+        button:focus{
+            background-color: dodgerblue;
+            color: white;
+        }
+
+    </style>
+</head>
+
+<body>
+
+
+    <form action="">
+        <div class="row">
+            <label for="userName" class="labels">User Name</label>
+            <label for="userName" class="icon"><i class="fa fa-user"></i></label>
+            <input type="text" placeholder="User Name" id="userName" class="input_field" required>
+        </div>
+        <div class="row">
+            <label for="email" class="labels">Email</label>
+            <label for="email" class="icon"><i class="fa fa-envelope"></i></label>
+            <input type="email" placeholder="Email" id="email" class="input_field">
+        </div>
+        <div class="row">
+            <label for="password" class="labels">Password</label>
+            <label for="password" class="icon"><i class="fa fa-key"></i></label>
+            <input type="password" placeholder="Password" id="password" class="input_field">
+        </div>
+        <div class="row">
+            <label for="phoneNumber" class="labels">Contact</label>
+            <label for="phoneNumber" class="icon"><i class="fa fa-phone"></i></label>
+            <input type="number" placeholder="Contact Number" id="phoneNumber" class="input_field">
+        </div>
+        <div class="row">
+            <label for="address" class="labels">Address</label>
+            <label for="address" class="icon"><i class="fa fa-home"></i></label>
+            <input type="number" placeholder="Address" id="address" class="input_field">
+        </div>
+        <div class="row_checkbox">
+            <input type="checkbox" name="service" value="itunes" id="checkbox" checked="checked" />
+            <label for="checkbox">Keep me signed in on this device</label>
+        </div>
+
+        <div class="btn">
+            <button>Register</button>
+        </div>
+    </form>
+
+</body>
+
+</html>
